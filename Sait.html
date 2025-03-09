@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Име на проекта</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MathJax за LaTeX формули (опционално) -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <style>
+    /* Базови настройки */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Горна лента (но без да копираме менюто) */
+    .header-bar {
+      background-color: #004080; /* Тъмносиньо, подобно на сайта */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header-bar h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .header-bar p {
+      margin: 5px 0 0;
+      font-size: 1em;
+      font-style: italic;
+    }
+
+    /* Основен контейнер */
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Секция с заглавие, подобно на отделните блокове в сайта */
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      color: #004080; /* Акцентен цвят */
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+
+    /* Примерен стил за датата и кратък анонс (подобно на "28.02.2025" и кратък текст) */
+    .announcement {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f0f0f0;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border-left: 5px solid #004080;
+    }
+    .announcement .date {
+      font-weight: bold;
+      color: #b57e00; /* Златист/оранжев акцент */
+    }
+    .announcement .text {
+      margin-left: 10px;
+      flex: 1;
+      color: #333;
+    }
+
+    /* Примерен стил за блок с изображение (ако желаем да поставим нещо като банер) */
+    .banner {
+      position: relative;
+      background-color: #e6e6e6;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .banner .banner-text {
+      max-width: 60%;
+    }
+    .banner img {
+      max-width: 35%;
+      border-radius: 5px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    /* Примерна стилизация на линкове */
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Горна лента (без меню) -->
+  <div class="header-bar">
+    <h1>Име на проекта</h1>
+    <p>Кратко описание / девиз на проекта</p>
+  </div>
+
+  <!-- Основен контейнер за съдържанието -->
+  <div class="container">
+    <!-- Примерен анонс (дата + кратък текст) -->
+    <div class="announcement">
+      <div class="date">10.03.2025</div>
+      <div class="text">Академична лекция на проф. Иван Иванов</div>
+    </div>
+
+    <!-- Примерен банер (ако желаете да включите изображение) -->
+    <div class="banner">
+      <div class="banner-text">
+        <h2>Geometry of Numbers</h2>
+        <p>Кратко резюме на лекцията или информация за събитието. Можете да опишете място, час и други детайли.</p>
+      </div>
+      <!-- Примерно изображение (заменете със свое) -->
+      <img src="https://via.placeholder.com/400x200" alt="Banner Image">
+    </div>
+
+    <!-- Секция: Преглед (или Основна информация) -->
+    <div class="section">
+      <h2>Преглед</h2>
+      <p>Тук може да поставите кратко описание на проекта, целите и задачите му. При нужда може да се добавят формули с MathJax, напр. \\( E = mc^2 \\).</p>
+    </div>
+
+    <!-- Секция: Изследователи -->
+    <div class="section">
+      <h2>Изследователи</h2>
+      <p>Списък на изследователите: имена, длъжности, контакти. Например:</p>
+      <ul>
+        <li>Проф. Иван Иванов – ръководител</li>
+        <li>Д-р Петър Петров – старши изследовател</li>
+        <li>Маг. Мария Георгиева – докторант</li>
+      </ul>
+    </div>
+
+    <!-- Секция: Финансиране -->
+    <div class="section">
+      <h2>Финансиране</h2>
+      <p>Тук може да се опише кой финансира проекта (фондации, програми, университети и т.н.).</p>
+    </div>
+
+    <!-- Секция: Статии и абстракти -->
+    <div class="section">
+      <h2>Статии и абстракти</h2>
+      <div style="margin-bottom: 20px;">
+        <h3>Статия 1</h3>
+        <p>Кратък абстракт на първата статия. <br>Примерна формула: \\( \\int_0^1 x^2 dx = \\frac{1}{3} \\).</p>
+        <p><a href="https://example.com/article1">Прочетете повече</a></p>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <h3>Статия 2</h3>
+        <p>Кратък абстракт на втората статия.</p>
+        <p><a href="https://example.com/article2">Прочетете повече</a></p>
+      </div>
+    </div>
+
+  </div> <!-- край на .container -->
+</body>
+</html>
