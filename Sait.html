@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Име на проекта</title>
+  <title>Project Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- MathJax за LaTeX формули (опционално) -->
+  <!-- MathJax for LaTeX formulas (optional) -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 
   <style>
-    /* Базови настройки */
+    /* Basic settings */
     * {
       box-sizing: border-box;
     }
@@ -23,9 +23,9 @@
       color: #333;
     }
 
-    /* Горна лента (но без да копираме менюто) */
+    /* Top bar (without copying the menu) */
     .header-bar {
-      background-color: #004080; /* Тъмносиньо, подобно на сайта */
+      background-color: #004080; /* Dark blue, similar to the site */
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -40,7 +40,7 @@
       font-style: italic;
     }
 
-    /* Основен контейнер */
+    /* Main container */
     .container {
       max-width: 1200px;
       margin: 20px auto;
@@ -49,12 +49,12 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    /* Секция с заглавие, подобно на отделните блокове в сайта */
+    /* Section styling, similar to the individual blocks on the site */
     .section {
       margin-bottom: 40px;
     }
     .section h2 {
-      color: #004080; /* Акцентен цвят */
+      color: #004080; /* Accent color */
       border-bottom: 2px solid #004080;
       padding-bottom: 5px;
       margin-top: 0;
@@ -63,7 +63,7 @@
       line-height: 1.6;
     }
 
-    /* Примерен стил за датата и кратък анонс (подобно на "28.02.2025" и кратък текст) */
+    /* Sample style for announcement (like "10.03.2025" and a short text) */
     .announcement {
       display: flex;
       align-items: center;
@@ -75,7 +75,7 @@
     }
     .announcement .date {
       font-weight: bold;
-      color: #b57e00; /* Златист/оранжев акцент */
+      color: #b57e00; /* Golden/orange accent */
     }
     .announcement .text {
       margin-left: 10px;
@@ -83,7 +83,7 @@
       color: #333;
     }
 
-    /* Примерен стил за блок с изображение (ако желаем да поставим нещо като банер) */
+    /* Sample style for a banner block (if you want to include an image as a banner) */
     .banner {
       position: relative;
       background-color: #e6e6e6;
@@ -102,7 +102,7 @@
       box-shadow: 0 0 8px rgba(0,0,0,0.2);
     }
 
-    /* Примерна стилизация на линкове */
+    /* Sample link styling */
     a {
       color: #004080;
       text-decoration: none;
@@ -114,68 +114,68 @@
   </style>
 </head>
 <body>
-  <!-- Горна лента (без меню) -->
+  <!-- Top bar (without menu) -->
   <div class="header-bar">
-    <h1>Име на проекта</h1>
-    <p>Кратко описание / девиз на проекта</p>
+    <h1>Project Name</h1>
+    <p>Brief description / project motto</p>
   </div>
 
-  <!-- Основен контейнер за съдържанието -->
+  <!-- Main container for the content -->
   <div class="container">
-    <!-- Примерен анонс (дата + кратък текст) -->
+    <!-- Sample announcement (date + short text) -->
     <div class="announcement">
       <div class="date">10.03.2025</div>
-      <div class="text">Академична лекция на проф. Иван Иванов</div>
+      <div class="text">Academic lecture by Prof. Ivan Ivanov</div>
     </div>
 
-    <!-- Примерен банер (ако желаете да включите изображение) -->
+    <!-- Sample banner (if you wish to include an image) -->
     <div class="banner">
       <div class="banner-text">
         <h2>Geometry of Numbers</h2>
-        <p>Кратко резюме на лекцията или информация за събитието. Можете да опишете място, час и други детайли.</p>
+        <p>Brief summary of the lecture or event information. You may include details like location, time, etc.</p>
       </div>
-      <!-- Примерно изображение (заменете със свое) -->
+      <!-- Sample image (replace with your own) -->
       <img src="https://via.placeholder.com/400x200" alt="Banner Image">
     </div>
 
-    <!-- Секция: Преглед (или Основна информация) -->
+    <!-- Section: Overview (or Main Information) -->
     <div class="section">
-      <h2>Преглед</h2>
-      <p>Тук може да поставите кратко описание на проекта, целите и задачите му. При нужда може да се добавят формули с MathJax, напр. \\( E = mc^2 \\).</p>
+      <h2>Overview</h2>
+      <p>You can place a brief description of the project, its objectives, and tasks here. If needed, you can include formulas with MathJax, e.g. \( \int_0^1 x^2 \, dx = \frac{1}{3} \).</p>
     </div>
 
-    <!-- Секция: Изследователи -->
+    <!-- Section: Researchers -->
     <div class="section">
-      <h2>Изследователи</h2>
-      <p>Списък на изследователите: имена, длъжности, контакти. Например:</p>
+      <h2>Researchers</h2>
+      <p>List the researchers: names, positions, contacts. For example:</p>
       <ul>
-        <li>Проф. Иван Иванов – ръководител</li>
-        <li>Д-р Петър Петров – старши изследовател</li>
-        <li>Маг. Мария Георгиева – докторант</li>
+        <li>Prof. Ivan Ivanov – Project Leader</li>
+        <li>Dr. Petar Petrov – Senior Researcher</li>
+        <li>MSc. Maria Georgieva – PhD Student</li>
       </ul>
     </div>
 
-    <!-- Секция: Финансиране -->
+    <!-- Section: Funding -->
     <div class="section">
-      <h2>Финансиране</h2>
-      <p>Тук може да се опише кой финансира проекта (фондации, програми, университети и т.н.).</p>
+      <h2>Funding</h2>
+      <p>Describe who is funding the project (foundations, programs, universities, etc.).</p>
     </div>
 
-    <!-- Секция: Статии и абстракти -->
+    <!-- Section: Articles and Abstracts -->
     <div class="section">
-      <h2>Статии и абстракти</h2>
+      <h2>Articles and Abstracts</h2>
       <div style="margin-bottom: 20px;">
-        <h3>Статия 1</h3>
-        <p>Кратък абстракт на първата статия. <br>Примерна формула: \( \int_0^1 x^2 \, dx = \frac{1}{3} \).</p>
-        <p><a href="https://example.com/article1">Прочетете повече</a></p>
+        <h3>Article 1</h3>
+        <p>Short abstract of the first article. <br>Example formula: \( \int_0^1 x^2 \, dx = \frac{1}{3} \).</p>
+        <p><a href="https://example.com/article1">Read more</a></p>
       </div>
       <div style="margin-bottom: 20px;">
-        <h3>Статия 2</h3>
-        <p>Кратък абстракт на втората статия.</p>
-        <p><a href="https://example.com/article2">Прочетете повече</a></p>
+        <h3>Article 2</h3>
+        <p>Short abstract of the second article.</p>
+        <p><a href="https://example.com/article2">Read more</a></p>
       </div>
     </div>
 
-  </div> <!-- край на .container -->
+  </div> <!-- end of .container -->
 </body>
 </html>
